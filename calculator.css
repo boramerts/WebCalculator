@@ -1,3 +1,9 @@
+/*
+ * Created on Tue Aug 01 2023
+ *
+ * 2023 Bora Mert Şahin
+ */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #383838;
@@ -59,13 +65,15 @@ body {
     height: 72px;
     flex-shrink: 0;
     flex-grow: 0;
-    font-size: 64px;
     font-weight: 400;
     text-align: right;
-    
+    line-height: 72px;
+
+    font-size: 7vw;
 
     color: #797979;
     margin-right: 21px;
+    margin-top: 50px;
     
     
 }

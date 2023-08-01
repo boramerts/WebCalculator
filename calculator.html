@@ -1,37 +1,49 @@
+<!--
+ Created on Tue Aug 01 2023
+
+ 2023 Bora Mert Şahin
+-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator by Bora Mert</title>
     <link rel="stylesheet" href="calculator.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
         <div class="frame">
             <div class="screen">
-                <button id="delete">DEL</button>
+                <button id="delete" onclick="clearScreen()">DEL</button>
                 <div id="display">12345</div>
             </div>
             <div class="keys">
-                <button id="one" class="gray">1</button>
-                <button id="two" class="gray">2</button>
-                <button id="three" class="gray">3</button>
-                <button id="plus" class="orange">+</button>
-                <button id="four" class="gray">4</button>
-                <button id="five" class="gray">5</button>
-                <button id="six" class="gray">6</button>
-                <button id="minus" class="orange">-</button>
-                <button id="seven" class="gray">7</button>
-                <button id="eight" class="gray">8</button>
-                <button id="nine" class="gray">9</button>
-                <button id="multi" class="orange">x</button>
-                <button id="dot" class="gray">.</button>
-                <button id="zero" class="gray">0</button>
-                <button id="equal" class="orange">=</button>
-                <button id="division" class="orange">%</div>
+                <button id="one" class="gray" onclick="getNumber(this)">1</button>
+                <button id="two" class="gray" onclick="getNumber(this)">2</button>
+                <button id="three" class="gray" onclick="getNumber(this)">3</button>
+                <button id="plus" class="orange" onclick="getNumber(this)">+</button>
+                <button id="four" class="gray" onclick="getNumber(this)">4</button>
+                <button id="five" class="gray" onclick="getNumber(this)">5</button>
+                <button id="six" class="gray" onclick="getNumber(this)">6</button>
+                <button id="minus" class="orange" onclick="getNumber(this)">-</button>
+                <button id="seven" class="gray" onclick="getNumber(this)">7</button>
+                <button id="eight" class="gray" onclick="getNumber(this)">8</button>
+                <button id="nine" class="gray" onclick="getNumber(this)">9</button>
+                <button id="multi" class="orange" onclick="getNumber(this)">x</button>
+                <button id="dot" class="gray" onclick="getNumber(this)">.</button>
+                <button id="zero" class="gray" onclick="getNumber(this)">0</button>
+                <button id="division" class="orange" onclick="getNumber(this)">%</button>
+                <button id="equal" class="orange" onclick="getNumber(this)">=
             </div>
         </div>
     </div>
+    </div>
+    <script src="calculator.js"></script>
 </body>
+
 </html>
